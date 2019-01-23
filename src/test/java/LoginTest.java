@@ -30,6 +30,7 @@ public class LoginTest {
 	public void dologin(){
 		
 		driver.get("https://www.zoho.com/");
+		driver.findElement(By.cssSelector(".zh-Customers")).click();
 		driver.findElement(By.cssSelector(".zh-login")).click();
 	}
 	
