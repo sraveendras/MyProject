@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +18,7 @@ public class LoginTest {
 		System.setProperty("WebDriver.chrome.driver", "F:\\FrameworkProject\\MyProject\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5l, TimeUnit.SECONDS);
 
 	}
 	
